@@ -1,1 +1,5 @@
 **/node_modules/
+client/Dockerfile
+client/.dockerignore
+server/Dockerfile
+server/.dockerignore
