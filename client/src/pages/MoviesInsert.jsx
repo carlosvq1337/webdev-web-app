@@ -7,6 +7,7 @@ const Title = styled.h1.attrs({
     className: 'h1',
 })``
 
+
 const Wrapper = styled.div.attrs({
     className: 'form-group',
 })`
@@ -114,6 +115,7 @@ class MoviesInsert extends Component {
                 <Button onClick={this.handleIncludeMovie}>Add Movie</Button>
                 <CancelButton href={'/movies/list'}>Cancel</CancelButton>
             </Wrapper>
+                                
         )
     }
 }
