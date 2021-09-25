@@ -26,6 +26,9 @@ class NavButtons extends Component {
 
                 <Wrapper>
                     <Button href="/Homepage">Inicio</Button>
+                    <Button href="/contents">Contenidos</Button>
+                    <Button href="/resources">Recursos</Button>
+                    <Button href="/about">Acerca</Button>
                     <Button href="/movies/create">Create Movie</Button>
                     <Button href="/movies/list">Edit/View Movies</Button>
                 </Wrapper>

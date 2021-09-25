@@ -9,7 +9,8 @@ import Loginbar from '../components/Loginbar'
 
 function App() {
     return (
-        <div style ={{backgroundColor: '#A9E4D7', height: "100vh", width: "100vw"}}>
+        <div style ={{backgroundColor: '#BFE6FF', height:'100vh'}}>
+
         <Router>
             <Loginbar />
             <Switch>
