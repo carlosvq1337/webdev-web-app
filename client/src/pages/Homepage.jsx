@@ -6,15 +6,25 @@ import styled from 'styled-components'
 const Wrapper = styled.div.attrs({
     className: 'form-group',
 })`
-background: #BFE6FF
 `
 const Button = styled.a.attrs({
     className: 'btn btn-primary',
 })`
-    background: #150050;
-    border: 0px solid #610094;
-    border-radius: 30px;
-    margin: 0.5rem 1rem;
+border-radius: 50px;
+background: #150050;
+padding: 10px 22px;
+color #fff;
+border: none;
+outline: none;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+
+&:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
 `
 
 const Abstract = styled.p`
@@ -28,6 +38,7 @@ const Title = styled.h1.attrs({
     className: 'h1',
 })`
     color: #150050;
+    margin-top: 100px;
     font-size: 3em;
 `
 const Subtext = styled.div`
@@ -44,10 +55,15 @@ padding: 2em;
 border-radius: 25px;
 color: white;
 line-height: 25px;
-box-shadow: 5px 5px 10px #0000;
+box-shadow: 5px 5px 10px #150050;
 margin-right: 1em;
+background: linear-gradient(#3F0071, #87CFFE 100%);
+transition: transform 250ms, box-shadow 250ms;
+&:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 15px #150050;
+}
 `
-
 const CardDark = styled.div`
 text-align:center;
 bottom:0;
@@ -56,9 +72,14 @@ padding: 2em;
 border-radius: 25px;
 color: white;
 line-height: 25px;
-box-shadow: 5px 5px 10px #0000;
+box-shadow: 5px 5px 10px #150050;
 margin-right: 1em;
 background: linear-gradient(#150050, #87CFFE 100%);
+transition: transform 250ms, box-shadow 250ms;
+&:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 15px #150050;
+}
 `
 
 
@@ -102,37 +123,37 @@ class Homepage extends Component {
                     </div>
                     <div class="row align-items-end">
                         <div class="col">
-                            <CardLight style={{background: "linear-gradient(160deg, #3F0071, #87CFFE 100%)"}}>
+                            <CardLight>
                                 <h2>
                                     Front End
                                 </h2>
                                 <p>
-                                    Relacionado con la interfaz que se le presenta al usuario; el diseño visual, estructura y presentación de la aplicación web.
+                                    Relacionado con la interfaz que se le presenta al usuario; el diseño visual y estructura de la aplicación web.
                                 </p>
                                 <Button href="/frontend">Quiero saber más</Button>
                             </CardLight>
                         </div>
                         <div class="col">
                             <CardDark>
-                                <h2>
+                                <h2 class="header">
                                     Full Stack
                                 </h2>
                                 <p>
                                     Un desarrollador Full Stack está en capacidad de involucrarse en el desarrollo tanto del Back End como del Front End.
                                 </p>
 
-                                <Button href="/frontend">Me interesa</Button>
+                                <Button href="/fullstack">Me interesa</Button>
                             </CardDark>
                         </div>
                         <div class="col">
-                            <CardLight style={{background: "linear-gradient(-160deg, #3F0071, #87CFFE 100%)"}}>
+                            <CardLight>
                                 <h2>
                                     Back End
                                 </h2>
                                 <p>
                                     El manejo de interacciones entre la aplicación, el servidor y la base de datos. Las funcionalidades que el usuario no ve.
                                 </p>
-                                <Button href="/frontend">Cuentame más</Button>
+                                <Button href="/backend">Cuentame más</Button>
                             </CardLight>
                         </div>
                     </div>

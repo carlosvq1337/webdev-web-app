@@ -6,12 +6,13 @@ import {FaBars} from 'react-icons/fa'
 
 //STYLING
 const Nav = styled.nav`
-background: #000;
 height: 80px;
 display: flex;
 justify-content: space-between;
 padding: 0.5rem calc((100vw - 1000px)/2);
 z-idex: 10;
+background: #150050;
+
 `
 
 const NavLink = styled(Link)`
@@ -23,7 +24,12 @@ padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 &.active {
-    color: #15cdfc;
+    color: #87CFFE;
+}
+&:hover{
+    transition: all 0.2s ease-in-out;
+    font-size: 1.5em;
+    color: #FFF;
 }
 `
 
@@ -61,8 +67,8 @@ margin-right: 24px;
 }
 `
 const NavBtnLink = styled(Link)`
-border-radius: 4px;
-background: #256ce1;
+border-radius: 50px;
+background: #150050;
 padding: 10px 22px;
 color #fff;
 border: none;
@@ -82,23 +88,34 @@ text-decoration: none;
 const Loginbar = () => {
     return (
         <>
-            <Nav>
-                <NavLink to="/Homepage">
-                    Home
-                </NavLink>
-                <Bars/>
-                <NavMenu>
-                    <NavLink to="/contents" activeStyle>
-                        Contents
-                    </NavLink>           
-                </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to="/signin">
-                        Sign In
-                    </NavBtnLink>
-                </NavBtn>
-            </Nav>
-        </>
+        <Nav>
+          <NavLink to='/'>
+            <img src={require('../logo.svg')} alt='logo' />
+          </NavLink>
+          <Bars />
+          <NavMenu>
+            <NavLink to='/contenido' activeStyle>
+              Contenido
+            </NavLink>
+            <NavLink to='/Recursos' activeStyle>
+              Recursos
+            </NavLink>
+            <NavLink to='/Contacto' activeStyle>
+              Contacto
+            </NavLink>
+            <NavLink to='/Acerca' activeStyle>
+              Acerca
+            </NavLink>
+            {/* Second Nav */}
+            {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+          </NavMenu>
+          <NavBtn>
+            <NavBtnLink to='/signin'>Iniciar sesión</NavBtnLink>
+          </NavBtn>
+        </Nav>
+      </>       
+            
+        
     )
 }
 
