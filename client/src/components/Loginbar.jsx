@@ -2,7 +2,7 @@
 import React from 'react'
 import { NavLink as Link} from 'react-router-dom'
 import styled from 'styled-components'
-import {FaBars} from 'react-icons/fa'
+import logo from '../logo.png'
 
 //STYLING
 const Nav = styled.nav`
@@ -29,23 +29,10 @@ cursor: pointer;
 &:hover{
     transition: all 0.2s ease-in-out;
     font-size: 1.5em;
-    color: #FFF;
+    color: #87CFFE;
 }
 `
 
-const Bars = styled(FaBars)`
-display: none;
-color: #fff;
-@media screen and (max-width: 768px){
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font0size: 1.8rem;
-    cursor: pointer;
-}
-`
 
 const NavMenu = styled.div`
 display: flex;
@@ -90,9 +77,9 @@ const Loginbar = () => {
         <>
         <Nav>
           <NavLink to='/'>
-            <img src={require('../logo.svg')} alt='logo' />
+            <img src={logo} alt='logo' width="50px" />
           </NavLink>
-          <Bars />
+          
           <NavMenu>
             <NavLink to='/contenido' activeStyle>
               Contenido
