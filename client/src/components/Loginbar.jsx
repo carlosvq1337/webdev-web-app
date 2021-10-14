@@ -11,7 +11,7 @@ display: flex;
 justify-content: space-between;
 padding: 0.5rem calc((100vw - 1000px)/2);
 z-idex: 10;
-background: #150050;
+background: #BFE6FF;
 
 `
 
@@ -69,6 +69,10 @@ text-decoration: none;
     background: #fff;
     color: #010606;
 }
+&.active {
+    color: #000;
+    background: #fff;
+}
 `
 
 
@@ -81,18 +85,18 @@ const Loginbar = () => {
           </NavLink>
           
           <NavMenu>
-            <NavLink to='/contenido' activeStyle>
-              Contenido
-            </NavLink>
-            <NavLink to='/Recursos' activeStyle>
-              Recursos
-            </NavLink>
-            <NavLink to='/Contacto' activeStyle>
-              Contacto
-            </NavLink>
-            <NavLink to='/Acerca' activeStyle>
-              Acerca
-            </NavLink>
+          <NavBtn>
+            <NavBtnLink to='/contenido'>Contenido</NavBtnLink>
+          </NavBtn>
+            <NavBtn>
+            <NavBtnLink to='/recursos'>Recursos</NavBtnLink>
+          </NavBtn>
+            <NavBtn>
+            <NavBtnLink to='/contacto'>Contacto</NavBtnLink>
+          </NavBtn>
+            <NavBtn>
+            <NavBtnLink to='/acerca'>Acerca</NavBtnLink>
+          </NavBtn>
             {/* Second Nav */}
             {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
           </NavMenu>

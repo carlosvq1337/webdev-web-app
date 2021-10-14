@@ -6,6 +6,7 @@ import styled from 'styled-components'
 const Wrapper = styled.div.attrs({
     className: 'form-group',
 })`
+background: #BFE6FF;
 `
 const Button = styled.a.attrs({
     className: 'btn btn-primary',
@@ -67,6 +68,7 @@ transition: transform 250ms, box-shadow 250ms;
 const CardDark = styled.div`
 text-align:center;
 bottom:0;
+margin-top: 10vh;
 box-sizing: border-box;
 padding: 2em;
 border-radius: 25px;
