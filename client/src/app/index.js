@@ -12,7 +12,7 @@ import Loginbar from '../components/Loginbar'
 
 function App() {
     return (
-        <div style ={{backgroundColor: '#BFE6FF', height:'100vh'}}>
+        
 
         <Router>
             <Loginbar />
@@ -28,7 +28,7 @@ function App() {
                 />
             </Switch>
         </Router>
-        </div>
+        
     )
 }
 

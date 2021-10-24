@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const Wrapper = styled.div.attrs({
     className: 'form-group',
 })`
-background: #BFE6FF;
+
 `
 const Button = styled.a.attrs({
     className: 'btn btn-primary',
@@ -57,7 +57,8 @@ color: white;
 line-height: 25px;
 box-shadow: 5px 5px 10px #150050;
 margin-right: 1em;
-background: linear-gradient(#3F0071, #87CFFE 100%);
+margin-bottom: 20px;
+background: linear-gradient(#3F0071, #5eb584 100%);
 transition: transform 250ms, box-shadow 250ms;
 &:hover{
     transform: translateY(-10px);
@@ -75,7 +76,8 @@ color: white;
 line-height: 25px;
 box-shadow: 5px 5px 10px #150050;
 margin-right: 1em;
-background: linear-gradient(#150050, #87CFFE 100%);
+margin-bottom: 20px;
+background: linear-gradient(#150050, #5eb584 100%);
 transition: transform 250ms, box-shadow 250ms;
 &:hover{
     transform: translateY(-10px);

@@ -9,7 +9,7 @@ class Contentpage extends Component {
             <>
             <div class = "container">
                 <div class = "row">
-                    <div class = "col-8">
+                    <div class = "col-9">
                         <Content/>
                     </div>
                     <div class = "col">

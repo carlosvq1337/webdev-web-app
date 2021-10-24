@@ -11,8 +11,11 @@ display: flex;
 justify-content: space-between;
 padding: 0.5rem calc((100vw - 1000px)/2);
 z-idex: 10;
-background: #BFE6FF;
+background: #5eb584;
 margin-bottom: 80px;
+border-bottom-style: solid;
+border-width: 3px;
+broder-color: #150050;
 
 `
 
