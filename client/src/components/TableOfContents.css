@@ -2,8 +2,49 @@
     position: sticky;
     position: -webkit-sticky; /* For Safari */
     top: 24px; /* How far down the page you want your ToC to live */
-  
+    background: linear-gradient(#150050, #5eb584 120%);
+    border-radius: 15px;
     /* Give table of contents a scrollbar */
     max-height: calc(100vh - 40px);
     overflow: auto;
+    padding-top: 10px;
   }
+
+  h2, h3 {
+    scroll-margin-top: 16px;
+}
+
+.heading2 {
+  color: rgb(212, 212, 212);
+  font-size: large;
+  text-decoration: none;
+}
+
+.heading3 {
+  color: rgb(212, 212, 212);
+  text-decoration: none;
+}
+
+li.active > a {
+  color: #FFF;
+  
+}
+
+li > a:hover {
+  transition: all 0.2s ease-in-out;
+  color: #b6b6b6;
+  font-size: 120%;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(255, 255, 255); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}

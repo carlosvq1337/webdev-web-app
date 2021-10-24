@@ -115,7 +115,7 @@ class Homepage extends Component {
                         </div>
                     </div>
                     <div class = "row">
-                        <div class="col-8">
+                        <div class="col-12 col-xl-9">
                             <Abstract>
                                 Ya sea que le interese el desarrollo Front end, Back end o Full Stack, incluso si no tiene idea de lo que significan estos términos, en este sitio encontrará la información y recursos necesarios para inciar el proceso de aprendizaje en el ámbito del desarrollo web de una forma eficiente.
                             </Abstract>
