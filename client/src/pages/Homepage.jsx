@@ -39,7 +39,6 @@ const Title = styled.h1.attrs({
     className: 'h1',
 })`
     color: #150050;
-    margin-top: 100px;
     font-size: 3em;
 `
 const Subtext = styled.div`
@@ -120,7 +119,7 @@ class Homepage extends Component {
                             </Abstract>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <div><iframe src="https://giphy.com/embed/xThuWu82QD3pj4wvEQ" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            
                         </div>
                     </div>
                     <div class="row align-items-end">
