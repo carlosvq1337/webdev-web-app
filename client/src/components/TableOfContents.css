@@ -2,7 +2,8 @@
     position: sticky;
     position: -webkit-sticky; /* For Safari */
     top: 24px; /* How far down the page you want your ToC to live */
-    background: linear-gradient(#150050, #5eb584 120%);
+    padding-right: 20px;
+    background: linear-gradient(#150050, #63B4B8 120%);
     border-radius: 15px;
     /* Give table of contents a scrollbar */
     max-height: calc(100vh - 40px);

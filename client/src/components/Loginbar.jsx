@@ -9,9 +9,9 @@ const Nav = styled.nav`
 height: 80px;
 display: flex;
 justify-content: space-between;
+background: #88A863;
 padding: 0.5rem calc((100vw - 1000px)/2);
 z-idex: 10;
-background: #5eb584;
 margin-bottom: 80px;
 border-bottom-style: solid;
 border-width: 3px;
@@ -70,12 +70,12 @@ text-decoration: none;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: #3F0071;
+    color: #FFF;
 }
 &.active {
-    color: #000;
-    background: #fff;
+    color: #FFF;
+    background: #3F0071;
 }
 `
 

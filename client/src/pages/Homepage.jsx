@@ -29,7 +29,7 @@ text-decoration: none;
 `
 
 const Abstract = styled.p`
-    color: #150050;
+    color: #000;
     font-size: 1em;
     margin-top: 5vh;
     font-weight: 500;
@@ -38,11 +38,11 @@ const Abstract = styled.p`
 const Title = styled.h1.attrs({
     className: 'h1',
 })`
-    color: #150050;
+    color: #000;
     font-size: 3em;
 `
 const Subtext = styled.div`
-    color: color: #150050;
+    color: color: #000;
     margin-top: 10px;
     font-size: 0.5em;
 `
@@ -58,26 +58,7 @@ line-height: 25px;
 box-shadow: 5px 5px 10px #150050;
 margin-right: 1em;
 margin-bottom: 20px;
-background: linear-gradient(#3F0071, #5eb584 100%);
-transition: transform 250ms, box-shadow 250ms;
-&:hover{
-    transform: translateY(-10px);
-    box-shadow: 10px 10px 15px #150050;
-}
-`
-const CardDark = styled.div`
-text-align:center;
-bottom:0;
-margin-top: 10vh;
-box-sizing: border-box;
-padding: 2em;
-border-radius: 25px;
-color: white;
-line-height: 25px;
-box-shadow: 5px 5px 10px #150050;
-margin-right: 1em;
-margin-bottom: 20px;
-background: linear-gradient(#150050, #5eb584 100%);
+background: linear-gradient(#3F0071, #88A863 100%);
 transition: transform 250ms, box-shadow 250ms;
 &:hover{
     transform: translateY(-10px);
@@ -137,7 +118,7 @@ class Homepage extends Component {
                             </CardLight>
                         </div>
                         <div class="col">
-                            <CardDark>
+                            <CardLight>
                                 <h2 class="header">
                                     Full Stack
                                 </h2>
@@ -146,7 +127,7 @@ class Homepage extends Component {
                                 </p>
 
                                 <Button href="/fullstack">Me interesa</Button>
-                            </CardDark>
+                            </CardLight>
                         </div>
                         <div class="col">
                             <CardLight>
