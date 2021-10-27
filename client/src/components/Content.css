@@ -2,3 +2,21 @@
     margin-bottom: 50px;
 }
 
+.content_image {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+.it {
+    font-style: italic;
+}
+
+.link-to-section {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
