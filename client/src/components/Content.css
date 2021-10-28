@@ -20,3 +20,11 @@
     text-decoration: none;
     color: black;
 }
+
+p{
+    justify-content: space-between;
+}
+
+iframe{
+    width: 100%;
+}
