@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TableOfContents, Content, Kanye_rest_api } from "../components";
+import { TableOfContents, Content } from "../components";
 
 class Contentpage extends Component {
 
@@ -13,7 +13,6 @@ class Contentpage extends Component {
                         <TableOfContents/>
                     </div>
                     <div class = "col-12 col-xl-9 ">
-                        <Kanye_rest_api/>
                         <Content/>
                     </div>
                     

@@ -1,5 +1,7 @@
 import React from 'react';
-class Kanye_rest_api extends React.Component {
+import './kanye_api.css'
+
+class KanyeRestApi extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -36,9 +38,14 @@ class Kanye_rest_api extends React.Component {
         return <div>Loading...</div>;
       } else {
         return (
-        <>
-            {kanye_quote}
-        </>
+        <div class = "wrapper">
+            <div class = "ye-quote">
+                {kanye_quote}
+                <div class = "signature">
+                - Ye
+                </div>
+            </div>
+        </div>
             
 
         );
@@ -46,5 +53,5 @@ class Kanye_rest_api extends React.Component {
     }
   }
 
-export default Kanye_rest_api;
+export default KanyeRestApi;
 

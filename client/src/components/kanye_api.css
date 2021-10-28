@@ -1,0 +1,27 @@
+.ye-quote {
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-style: italic;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 55px;
+    padding-left: 15px;
+    max-width: 60%;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: #88A863;
+}
+
+.signature {
+    text-align: right;
+    font-style: normal;
+    margin-right: -40px;
+}
+
+.wrapper {
+    text-align: center;
+}
