@@ -8,7 +8,7 @@ const Content = () => {
     return (
         <div class = "content-wrapper">
         <h2 id = "webdev-intro">Breve introducción</h2>
-        <p>Las teccnologías de desarrollo web se dividen en dos categorías principales. Tecnologías dedicadas al desarrollo <span class="it">front end</span> y aquellas dedicadas el desarrollo <span class="it">back end</span>. El término <span class="it">front end</span> de forma resumida, hace alusión a la interfaz de usuario, mientras que el término <span class="it">back end</span> se refiere al servidor, base de datos y aplicación que maneja la comunicación entre estos, para implementar las funcionalidades y desplegar la información al usuario. 
+        <p>Las teccnologías de desarrollo web se dividen en dos categorías principales, que juntas conforman lo que se conoce como el desarrollo  <span class="it">full stack</span>. Esta división comprende las tecnologías dedicadas al desarrollo <span class="it">front end</span> y aquellas dedicadas el desarrollo <span class="it">back end</span>. El término <span class="it">front end</span> de forma resumida, hace alusión a la interfaz de usuario, mientras que el término <span class="it">back end</span> se refiere al servidor, base de datos y aplicación que maneja la comunicación entre estos, para implementar las funcionalidades y desplegar la información al usuario. 
         <br />
         <img src={webdev_diagram} alt="diagram" class = "content_image"/>
         <br />
@@ -22,21 +22,41 @@ const Content = () => {
         JavaScript es el tercer lenguaje involucrado en el <span class="it">front end</span>, sin embargo este no es utilizado para afectar la apariencia de las aplicaciones web directamente, como lo hacen CSS o HTML, sino que más bien permite introducir funcionalidades a nivel de cliente, lo que lo hace una herramienta increíblemente útil y con mucha profundidad.
         </p>
             <h3 id = "html">HTML</h3>
+            <p>El lenguaje HTML permite etiquetar secciones de texto, imágenes y demás contenido, de forma que según la etiqueta utilizada, se le asignen atributos correspondientes al contenido etiquetado. En el lenguaje HTML existen elementos especiales, con características predefinidas que resultan increíblemente útiles. En el siguiente <span class="it">codepen</span> se puede apreciar una estructura muy básica descrita en HTML con elementos <kbd>&lt;body&gt;</kbd>, <kbd>&lt;h3&gt;</kbd>, <kbd>&lt;p&gt;</kbd> y <kbd>&lt;br /&gt;</kbd>.</p>
+
             <iframe height="300" scrolling="no" title="html_example" src="https://codepen.io/carlosevq/embed/WNEOLOX?default-tab=html%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
             See the Pen <a href="https://codepen.io/carlosevq/pen/WNEOLOX">
             html_example</a> by Carlos (<a href="https://codepen.io/carlosevq">@carlosevq</a>)
             on <a href="https://codepen.io">CodePen</a>.
             </iframe>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+            <p>Para una lista completa y actualizada de los elementos HTML existentes, puede referirse a la <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element" target="_blank" rel="noreferrer" class = "external-link">Referencia de Elementos HTML</a> en MDN Web Docs de Mozilla. Siéntase en toda la libertad de editar el código HTML en el <span class="it">codepen</span> a su gusto y el resultado se actualizará automáticamente.</p>
+
+
             <h3 id = "CSS">CSS</h3>
+            <p>Mientras que HTML es extremadamente útil para describir la estructura y elementos de las páginas, es muy limitado en lo que concierne a la personalización de los elementos y su apariencia. Para esto se introduce CSS a las tecnologías del desarrollo web. CSS permite definir estilos para cada uno de los elementos HTML existentes. Un estilo permite modificar las propiedades de cada elemento: su tamaño, posición, color de fondo, etc. En el siguiente <span class="it">codepen</span> se aplican estilos a cada elemento HTML presente en el ejemplo. En el caso del elemento <kbd>&lt;body&gt;</kbd>, se utiliza un selector de elemento, mientras que para los elementos  <kbd>&lt;h3&gt;</kbd> y <kbd>&lt;p&gt;</kbd> se utilizan selectores de clase. Los selectores de elemento siguen el formato <kbd>element</kbd> mientras que los de clase siguen el formato <kbd>.className</kbd>. En el <span class="it">codepen</span> puede mirar las modificaciones realizadas al código HTML para incluir las clases necesarias, así como también el código CSS donde se definen los estilos por medio de los selectores mencionados.</p>
+        
+
             <iframe height="300" scrolling="no" title="Untitled" src="https://codepen.io/carlosevq/embed/WNEOPvg?default-tab=css%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
             See the Pen <a href="https://codepen.io/carlosevq/pen/WNEOPvg">
             Untitled</a> by Carlos (<a href="https://codepen.io/carlosevq">@carlosevq</a>)
             on <a href="https://codepen.io">CodePen</a>.
             </iframe>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+            <p>Para una referencia completa de CSS que comprende su sintaxis, índice de palabras clave, información sobre selectores y conceptos importantes, puede referirse a la <a href="https://developer.mozilla.org/es/docs/Web/CSS/Reference" target="_blank" rel="noreferrer" class = "external-link">Referencia CSS</a> en MDN Web Docs de Mozilla. Siéntase en completa libertad de editar el código CSS en el <span class="it">codepen</span> para experimentar observando los resultados. </p>
+
             <h3 id = "Bootstrap">Bootstrap</h3>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+            <p>Bootstrap es un conjunto de herramientas de código abierto que facilitan el proceso de diseño <span class="it">front end</span>. De manera muy resumida, bootstrap permite acceder a una librería enorme de elementos con estilos y funcionalidades predefinidas de forma muy sencilla por medio de las clases HTML. En el siguiente <span class="it">codepen</span> se puede apreciar un ejemplo realizado por Chris Coyier, donde por medio de la red de distribución de contenido <a href="https://www.bootstrapcdn.com/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap CDN</a> se realiza la inclusión de las clases Bootstrap que luego son utilizadas en el código HTML. Cómo se puede observar en el mismo <span class="it">codepen</span>, el código CSS es mínimo, sin embargo los elementos poseen estilos complejos y muy atractivos, ya que se trata de los estilos Bootstrap asociados a las clases referenciadas desde el HTML.</p>
+
+            <iframe height="400" scrolling="no" title="Example of Bootstrap on CodePen" src="https://codepen.io/chriscoyier/embed/hBzat?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/chriscoyier/pen/hBzat">
+            Example of Bootstrap on CodePen</a> by Chris Coyier  (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+
+            <p>Para una guía detallada de cómo añadir Bootstrap a cualquier aplicación web, puede referirse a la <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel="noreferrer" class = "external-link">Introducción a Bootstrap</a>.</p>
+
         <h2 id = "js">JavaScript</h2>
         <iframe height="300" scrolling="no" title="Untitled" src="https://codepen.io/carlosevq/embed/NWvgmyw?default-tab=js%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
         See the Pen <a href="https://codepen.io/carlosevq/pen/NWvgmyw">

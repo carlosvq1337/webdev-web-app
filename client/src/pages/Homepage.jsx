@@ -114,7 +114,7 @@ class Homepage extends Component {
                                 <p>
                                     Relacionado con la interfaz que se le presenta al usuario; el diseño visual y estructura de la aplicación web.
                                 </p>
-                                <Button href="/frontend">Quiero saber más</Button>
+                                <Button href="/contenido#front-end">Quiero saber más</Button>
                             </CardLight>
                         </div>
                         <div class="col">
@@ -126,7 +126,7 @@ class Homepage extends Component {
                                     Un desarrollador Full Stack está en capacidad de involucrarse en el desarrollo tanto del Back End como del Front End.
                                 </p>
 
-                                <Button href="/fullstack">Me interesa</Button>
+                                <Button href="/contenido#webdev-intro">Me interesa</Button>
                             </CardLight>
                         </div>
                         <div class="col">
@@ -137,7 +137,7 @@ class Homepage extends Component {
                                 <p>
                                     El manejo de interacciones entre la aplicación, el servidor y la base de datos. Las funcionalidades que el usuario no ve.
                                 </p>
-                                <Button href="/backend">Cuentame más</Button>
+                                <Button href="/contenido#back-end">Cuentame más</Button>
                             </CardLight>
                         </div>
                     </div>
