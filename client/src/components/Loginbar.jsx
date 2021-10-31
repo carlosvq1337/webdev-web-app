@@ -58,24 +58,27 @@ margin-right: 24px;
 }
 `
 const NavBtnLink = styled(Link)`
-border-radius: 50px;
-background: #150050;
-padding: 10px 22px;
-color #fff;
-border: none;
-outline: none;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
+flex: 1 1 auto;
+margin: 10px;
+padding: 10px;
+padding-right: 15px;
+padding-left: 15px;
+text-align: center;
 text-decoration: none;
-
+transition: 0.5s;
+background-size: 200% auto;
+color: white;
+background-image: linear-gradient(to right, #150050 0%, #7232a6 51%, #150050 100%);
+border-radius: 20px;
+box-shadow: 0 0 5px #000;
 &:hover{
-    transition: all 0.2s ease-in-out;
-    background: #3F0071;
-    color: #FFF;
+  background-position: right center;
+  color: #FFF;
 }
 &.active {
-    color: #FFF;
-    background: #3F0071;
+    color: #000;
+    background: #FFF;
+    box-shadow: 0 0 5px #FFF;
 }
 `
 

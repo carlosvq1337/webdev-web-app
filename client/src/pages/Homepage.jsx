@@ -58,7 +58,7 @@ line-height: 25px;
 box-shadow: 5px 5px 10px #150050;
 margin-right: 1em;
 margin-bottom: 20px;
-background: linear-gradient(#3F0071, #88A863 100%);
+background: linear-gradient(#150050, #3F0071 100%);
 transition: transform 250ms, box-shadow 250ms;
 &:hover{
     transform: translateY(-10px);
