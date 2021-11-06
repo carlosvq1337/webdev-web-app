@@ -104,12 +104,8 @@ const Loginbar = () => {
             <NavBtn>
             <NavBtnLink to='/acerca'>Acerca</NavBtnLink>
           </NavBtn>
-            {/* Second Nav */}
-            {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to='/signin'>Iniciar sesión</NavBtnLink>
-          </NavBtn>
+          
         </Nav>
       </>       
             

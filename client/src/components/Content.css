@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 .content-wrapper {
     margin-bottom: 50px;
 }
@@ -24,7 +26,10 @@
 .external-link {
     text-decoration: none;
     font-weight: bold;
-    
+    color: #3F0071;
+}
+.external-link:hover {
+    color:#3F0071;
 }
 
 p{
@@ -36,3 +41,31 @@ iframe{
     margin-bottom: 15px;
     width: 100%;
 }
+
+.content-list {
+    display:inline-block;
+    padding:5px 10px 5px 25px;
+    border-radius: 5px;
+    background: #b3cead;
+}
+
+.text-code {
+    display:inline-block;
+    padding:5px 10px 5px 10px;
+    border-radius: 5px;
+    background: #b3cead;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.at-rosado {
+    background: #B266FF;
+    padding: 3px;
+    color: white;
+}
+
+.at-verde {
+    background: #4D9900;
+    padding: 3px;
+    color: white;
+}
+
