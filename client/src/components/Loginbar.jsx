@@ -2,13 +2,12 @@
 import React from 'react'
 import { NavLink as Link} from 'react-router-dom'
 import styled from 'styled-components'
-import logo from '../logo.png'
 
 //STYLING
 const Nav = styled.nav`
 height: 80px;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 background: #88A863;
 padding: 0.5rem calc((100vw - 1000px)/2);
 z-idex: 10;
@@ -18,25 +17,6 @@ border-width: 3px;
 broder-color: #150050;
 
 `
-
-const NavLink = styled(Link)`
-color: #fff;
-display: flex;
-align-items: center;
-text-decoration: none;
-padding: 0 1rem;
-height: 100%;
-cursor: pointer;
-&.active {
-    color: #87CFFE;
-}
-&:hover{
-    transition: all 0.2s ease-in-out;
-    font-size: 1.5em;
-    color: #87CFFE;
-}
-`
-
 
 const NavMenu = styled.div`
 display: flex;
@@ -68,11 +48,10 @@ text-decoration: none;
 transition: 0.5s;
 background-size: 200% auto;
 color: white;
-background-image: linear-gradient(to right, #150050 0%, #7232a6 51%, #150050 100%);
+background-image: linear-gradient(to top, #150050 0%, #7232a6 120%, #150050 200%);
 border-radius: 20px;
-box-shadow: 0 0 5px #000;
 &:hover{
-  background-position: right center;
+  background-position: top center;
   color: #FFF;
 }
 &.active {
@@ -82,16 +61,35 @@ box-shadow: 0 0 5px #000;
 }
 `
 
+const NavBtnLinkHP = styled(Link)`
+flex: 1 1 auto;
+margin: 10px;
+padding: 10px;
+padding-right: 15px;
+padding-left: 15px;
+text-align: center;
+text-decoration: none;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;
+background-image: linear-gradient(to top, #150050 0%, #7232a6 120%, #150050 200%);
+border-radius: 20px;
+&:hover{
+  background-position: right center;
+  color: #FFF;
+}
+
+`
+
 
 const Loginbar = () => {
     return (
         <>
         <Nav>
-          <NavLink to='/'>
-            <img src={logo} alt='logo' width="50px" />
-          </NavLink>
-          
           <NavMenu>
+            <NavBtn>
+            <NavBtnLinkHP to='/'>Inicio</NavBtnLinkHP>
+          </NavBtn>
           <NavBtn>
             <NavBtnLink to='/contenido'>Contenido</NavBtnLink>
           </NavBtn>
@@ -99,17 +97,11 @@ const Loginbar = () => {
             <NavBtnLink to='/recursos'>Recursos</NavBtnLink>
           </NavBtn>
             <NavBtn>
-            <NavBtnLink to='/contacto'>Contacto</NavBtnLink>
-          </NavBtn>
-            <NavBtn>
             <NavBtnLink to='/acerca'>Acerca</NavBtnLink>
           </NavBtn>
           </NavMenu>
-          
         </Nav>
-      </>       
-            
-        
+      </>        
     )
 }
 
