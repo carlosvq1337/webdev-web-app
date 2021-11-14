@@ -5,7 +5,42 @@ import webdev_diagram from '../webdev_diagram.svg';
 import sql_diagram from '../sql_diagram.svg';
 import nosql_diagram from '../nosql_diagram.svg';
 import MERN_diagram from '../MERN_diagram.svg';
+import { CodeBlock } from '@atlaskit/code';
 
+const mongoose1 = `const mongoose = require('mongoose');
+
+main().catch(err => console.log(err));
+
+async function main() {
+    await mongoose.connect('mongodb://localhost:27017/test');
+}`;
+
+const mongoose2 = `  import mongoose from 'mongoose';
+const { Schema } = mongoose;
+
+const blogSchema = new Schema({
+    title:  String, // String is shorthand for {type: String}
+    author: String,
+    body:   String,
+    comments: [{ body: String, date: Date }],
+    date: { type: Date, default: Date.now },
+    hidden: Boolean,
+    meta: {
+        votes: Number,
+        favs:  Number
+    }
+});`
+
+const express = `// GET method route
+app.get('/', function (req, res) {
+    res.send('GET request to the homepage');
+  });
+  
+  // POST method route
+  app.post('/', function (req, res) {
+    res.send('POST request to the homepage');
+  });
+`
 
 const Content = () => {
     return (
@@ -89,7 +124,7 @@ const Content = () => {
 
 
         <h2 id = "back-end">Tecnologías Back-end</h2>
-        <p>En el <span class="it">back end</span> encontramos el código que se ejecuta en el servidor, encargado de recibir las solicitudes de los clientes y la lógica requerida para enviar las respuestas adecuadas de vuelta a estos, así como también la base de datos de la aplicación web. Tanto para el desarrollador full stack como para el desarrollador  <span class="it">back end</span> es importante conocer la manera en que el  <span class="it">front end</span> y el  <span class="it">back end</span> se comunican entre sí. Para esto, profunidazremos un poco en el estilo de arquitectura REST.</p>
+        <p>En el <span class="it">back end</span> encontramos el código que se ejecuta en el servidor, encargado de recibir las solicitudes de los clientes y la lógica requerida para enviar las respuestas adecuadas de vuelta a estos, así como también la base de datos de la aplicación web. Tanto para el desarrollador full stack como para el desarrollador <span class="it">back end</span> es importante conocer la manera en que el  <span class="it">front end</span> y el  <span class="it">back end</span> se comunican entre sí. Para esto, profunidazremos un poco en el estilo de arquitectura REST.</p>
             <h3 id = "REST">REST</h3>
             <p>REST (REpresentational State Transfer) es un estilo de arquitectura que permite estandarizar la manera en que los diferentes servicios en la web se comunican entre sí. Esto facilita la implementación de una comunicación entre la infinidad de servicios que existen en la web. Un ejemplo de esto son las RESTful APIs. Para más información sobre la arquitectura REST, puede referirse a <a href="https://www.codecademy.com/articles/what-is-rest" target="_blank" rel="noreferrer" class = "external-link">What is REST?</a> en codecademy.</p>
 
@@ -148,18 +183,35 @@ const Content = () => {
             <p>En la figura anterior se puede apreciar como se introdujo un nuevo atributo <span class = "at-verde">SLA_dias</span> a la tabla. Además se aprecia como no todas las entradas poseen toda la información, por ejemplo el nuevo campo. Esto es parte de la flexibilidad que ofrecen las bases de datos no relacionales, se pueden definir campos obligatorios y campos opcionales. Una de las plataformas para bases de datos no relacionales más populares es <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" class = "external-link">MongoDB</a>. Para profundizar en el tema de bases de datos no relacionales puede referirse a <a href="https://www.mongodb.com/databases/non-relational" target="_blank" rel="noreferrer" class = "external-link">What is a Non-Relational Database?</a>.</p>
 
         <h2 id = "MERN">MERN</h2>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        <p>Se conoce como MERN el conjunto de las tecnologías MongoDB, ExpressJS, ReactJS y NodeJS. Este conjunto de tencologías facilita el desarrollo <span class="it">full stack</span> de una aplicación web, desde el <span class="it">front end</span> haciendo uso de ReactJS, HTML y CSS, hasta el <span class="it">back end</span> con una base de datos, impulsada por MongoDB y una funcionalidad a nivel de servidor manejada por Node y Express. La siguiente figura muestra la estructurade una aplicación web con tecnologías MERN, y las distintas áreas donde estas operan.</p>
 
         <img src={MERN_diagram} alt="diagram" class = "content_image"/>
 
             <h3 id = "Mongo">MongoDB</h3>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <p>MongoDB es una plataforma de datos para aplicaciones que permite implementar bases de datos no relacionales de forma rápida y sencilla. De especial interés es el servicio <a href="https://www.mongodb.com/atlas/database" target="_blank" rel="noreferrer" class = "external-link">Mongo Atlas</a>. Este permite implementar una base de datos no relacional en diferentes servicios <span class="it">cloud</span> de manera sencilla y amigable para el principante.</p>
+
+            <h4>Mongoose</h4>
+
+            <p><a href="https://mongoosejs.com/" target="_blank" rel="noreferrer" class = "external-link">Mongoose</a> es una biblioteca para JavaScript que simplifica la tarea de generar la conexión a la base de datos por medio de sus funciones:</p>
+            
+            <CodeBlock language="js" showLineNumbers={true} text={mongoose1} highlight="1,6"/>
+            <br />
+            <p>Además, posee funcionalidades para definir <a href="https://mongoosejs.com/docs/guide.html" target="_blank" rel="noreferrer" class = "external-link">schemas</a>. Un schema define la estructura que tendrán las entradas de la base de datos:</p>
+
+            <CodeBlock language="js" showLineNumbers={true} text={mongoose2} highlight="2, 4-14"/>
+            <br />
+            <p>En adición a estas funcionalidades básicas, Mongoose permite mucha más profunidad, al permitir definir métodos para los schemas definidos, QueryHelpers, y otras funcioanlidades aún más complejas descritas en <a href="https://mongoosejs.com/docs/guide.html" target="_blank" rel="noreferrer" class = "external-link">la guía oficial de Mongoose</a>.</p>
+    
             <h3 id = "Express">Express</h3>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <p><a href="https://expressjs.com/" target="_blank" rel="noreferrer" class = "external-link">ExpressJS</a> es una infraestructura de aplicaciones web Node.js que proporciona un conjunto sólido de características para las aplicaciones web. De forma muy sencilla permite la creación de APIs para manejar las solicitudes que realiza el cliente al <span class="it">back end</span>. De esta forma el desarrollador puede implementar la comunicación entre su <span class="it">front end</span> y <span class="it">back end</span> de forma sencilla.</p>
+
+            <CodeBlock language="js" showLineNumbers={true} text={express} />
+            <br />
+
             <h3 id = "React">React</h3>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <p>React es una biblioteca de JavaScript para construir interfaces de usuario. El mayor aporte de React es que permite incorporar elementos interactivos de lado del cliente, de forma sencilla, a las aplicaciones web. Se basa en un diseño de componentes, donde cada componente maneja estados que pueden ser modificados ya sea por el usuario o por eventos ajenos a este. Un ejemlo de esto es la tabla de contenidos en la parte izquierda de esta página. Esta tabla es un componente react que es capaz de enfatizar el contenido correspondiente al que se visualiza en pantalla actualmente. Si no ha observado este comportamiento, pruebe hacer click en cualquier contenido listado y observar el comportamiento. La <a href="https://es.reactjs.org/" target="_blank" rel="noreferrer" class = "external-link">página oficial de React</a> proporciona un excelente vistazo general de las diferentes funcionalidades existentes.</p>
             <h3 id = "Node">Node</h3>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <p><a href="https://nodejs.org/es/about/" target="_blank" rel="noreferrer" class = "external-link">Node</a> es un entorno de ejecución para JavaScript que fue diseñado con el fin de crear aplicaciones <span class="it">network</span> escalables. Específicamente permite manejar conexiones entre clientes y servidores de forma muy eficiente y sencilla. Por esta razón es especialmente útil en el ámbito del desarrollo web, ya que permite implementar aplicaciones a nivel de servidor que manejan las solicitudes y retornan las respuestas adecuadas a los clientes, así como también permite un manejo de los accesos a las bases de datos.</p>
             </div>
     );
 };
