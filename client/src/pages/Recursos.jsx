@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { TableOfContents, Content } from "../components";
+import {  } from "../components";
+import Rec from "../components/Rec";
+import { TableOfContents } from "../components";
 
-class Contentpage extends Component {
+class Recursos extends Component {
 
     render(){
         return(
@@ -12,7 +14,7 @@ class Contentpage extends Component {
                         <TableOfContents/>
                     </div>
                     <div class = "col-12 col-xl-9 ">
-                        <Content/>
+                        <Rec/>
                     </div>
                     
                 </div>
@@ -21,4 +23,4 @@ class Contentpage extends Component {
         )
     }
 }
-export default Contentpage;
+export default Recursos;
