@@ -25,11 +25,13 @@ const Rec = () => {
 
         </ul>
         <h3 id = "env-guide">Utilización del ambiente</h3>
+        <p>Una vez terminada la inicialización del ambiente descrita en los pasos anteriores, las funcionalidades necesarias para el desarrollo se pueden manejar desde la interfaz gráfica del cliente Docker. Se recomienda utilizar el editor <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer" class = "external-link">VS Code</a>, ya que Docker tiene soporte para este editor, y viceversa por medio de las extensiones disponibles en VS Code. Si se posee una instalación de VS Code, se puede hacer click en el botón mostrado en la siguiente imagen para acceder al código fuente de la plantilla, el cuál puede ser reemplazado o modificado para iniciar el proceso de desarrollo.</p>
         <img src={d1} alt="diagram" class = "content_image"/>
+        <p>Durante el proceso de desarrollo puede surgir la necesidad de instalar paquetes npm que no existen en el ambiente Docker. Para esto, la terminal ligada al servicio <span class="it">front end</span> se puede acceder desde el botón mostrado en la siguiente imagen.</p>
         <img src={d2} alt="diagram" class = "content_image"/>
+        <p>Finalmente, para observar los logs asociados a cada uno de los servicios puede hacer click sobre el nombre de cada uno de los contenedores, esto desplegará la consola respectiva, lo que es muy útil para observar los mensajes durante el proceso de debuggeo y troubleshooting. Un ejemplo de los logs asociados al <span class="it">front end</span> se muestra en la siguiente imagen.</p>
         <img src={d3} alt="diagram" class = "content_image"/>
         <p></p>
-    3
         <h2 id = "F-end">Recursos Front End</h2>
         <h3 id = "F-end-tec">Referencias de Tecnologías</h3>
         <h3 id = "diseno">Diseño</h3>
