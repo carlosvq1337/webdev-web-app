@@ -34,9 +34,102 @@ const Rec = () => {
         <p></p>
         <h2 id = "F-end">Recursos Front End</h2>
         <h3 id = "F-end-tec">Referencias de Tecnologías</h3>
-        <h3 id = "diseno">Diseño</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Tecnología</th>
+                <th scope="col">Recurso</th>
+                <th scope="col">Descripción/Keywords</th>
+                <th scope="col">Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">HTML</th>
+                <td>Documentación HTML</td>
+                <td>Docummentación general del lenguaje HTML, enlaces a tutoriales y acceso a documentación completa de cada elemento HTML.</td>
+                <td><a href="https://devdocs.io/html/" target="_blank" rel="noreferrer" class = "external-link">devdocs.io</a></td>
+                </tr>
+                <tr>
+                <th scope="row">HTML</th>
+                <td>Referencia de Elementos HTML</td>
+                <td>Listado de los elementos HTML existentes, con sus respectivas funciones y sintáxis, con enlaces a la documentación de cada elemento.</td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element" target="_blank" rel="noreferrer" class = "external-link">MDN Webdocs</a></td>
+                </tr>
+                <tr>
+                <th scope="row">CSS</th>
+                <td>Documentación CSS</td>
+                <td>Documentación completa de CSS, comprende la sintáxis de las reglas, selectores, animaciones y efectos, transformaciones, etc.</td>
+                <td><a href="https://devdocs.io/css/" target="_blank" rel="noreferrer" class = "external-link">devdocs.io</a></td>
+                </tr>
+                <tr>
+                <th scope="row">CSS</th>
+                <td>Referencia CSS</td>
+                <td>Listado completo de las palabras clave existentes en CSS con su respectiva descripción.</td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/Reference" target="_blank" rel="noreferrer" class = "external-link">MDN Webdocs</a></td>
+                </tr>
+                <tr>
+                <th scope="row">CSS</th>
+                <td>Bootstrap CDN</td>
+                <td>Listado de los enlaces CDN de Bootstrap listos para producción.</td>
+                <td><a href="https://www.bootstrapcdn.com/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap CDN</a></td>
+                </tr>
+                <tr>
+                <th scope="row">JavaScript</th>
+                <td>Documentación JavaScript</td>
+                <td>Documentación completa de JavaScript, comprende documentación de las funciones, objetos, manejo de flujo, clases, declaraciones, e incluso hasta el manejo de memoria en JavaScript.</td>
+                <td><a href="https://devdocs.io/javascript/" target="_blank" rel="noreferrer" class = "external-link">devdocs.io</a></td>
+                </tr>     
+            </tbody>
+        </table>
+        <h3 id = "diseno">Referencias Para el Diseño</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Recurso</th>
+                <th scope="col">Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Paletas de colores</th>
+                <td><a href="https://colorhunt.co/" target="_blank" rel="noreferrer" class = "external-link">colorhunt.co</a></td>
+
+                </tr>
+            </tbody>
+        </table>
         <h2 id = "B-end">Recursos Back End</h2>
         <h3 id = "B-end-tec">Referencias de Tecnologías</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Tecnología</th>
+                <th scope="col">Recurso</th>
+                <th scope="col">Descripción/Keywords</th>
+                <th scope="col">Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">HTML</th>
+                <td>ayo</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                </tr>
+                <tr>
+                <th scope="row">CSS</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                </tr>
+                <tr>
+                <th scope="row">Javascript</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
         
         </div>
     );
