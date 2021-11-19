@@ -69,9 +69,11 @@ iframe{
     color: white;
 }
 
-.table {
+.accordion .accordion-item {
     background-color: #b3cead;
-    border-radius: 10px;
 }
 
-
+.accordion .accordion-item .accordion-header .accordion-button{
+    background-color: #b3cead;
+    font-weight:bold;
+}

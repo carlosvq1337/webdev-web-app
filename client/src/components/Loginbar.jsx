@@ -2,6 +2,7 @@
 import React from 'react'
 import { NavLink as Link} from 'react-router-dom'
 import styled from 'styled-components'
+import './Loginbar.css'
 
 //STYLING
 const Nav = styled.nav`
@@ -40,7 +41,7 @@ margin-right: 24px;
 const NavBtnLink = styled(Link)`
 flex: 1 1 auto;
 margin: 10px;
-padding: 10px;
+padding: 7px;
 padding-right: 15px;
 padding-left: 15px;
 text-align: center;
@@ -48,23 +49,18 @@ text-decoration: none;
 transition: 0.5s;
 background-size: 200% auto;
 color: white;
-background-image: linear-gradient(to top, #150050 0%, #7232a6 120%, #150050 200%);
-border-radius: 20px;
+background-color: #150050;
+border-radius: 15px;
 &:hover{
-  background-position: top center;
+  background-color:#3F0071;
   color: #FFF;
-}
-&.active {
-    color: #000;
-    background: #FFF;
-    box-shadow: 0 0 5px #FFF;
 }
 `
 
 const NavBtnLinkHP = styled(Link)`
 flex: 1 1 auto;
 margin: 10px;
-padding: 10px;
+padding: 7px;
 padding-right: 15px;
 padding-left: 15px;
 text-align: center;
@@ -72,10 +68,10 @@ text-decoration: none;
 transition: 0.5s;
 background-size: 200% auto;
 color: white;
-background-image: linear-gradient(to top, #150050 0%, #7232a6 120%, #150050 200%);
-border-radius: 20px;
+background-color: #150050;
+border-radius: 15px;
 &:hover{
-  background-position: right center;
+  background-color:#3F0071;
   color: #FFF;
 }
 
@@ -87,11 +83,21 @@ const Loginbar = () => {
         <>
         <Nav>
           <NavMenu>
+          
             <NavBtn>
             <NavBtnLinkHP to='/'>Inicio</NavBtnLinkHP>
           </NavBtn>
           <NavBtn>
-            <NavBtnLink to='/contenido'>Contenido</NavBtnLink>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Contenido
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="/contenido#webdev-intro">Desarrollo Full Stack</a></li>
+              <li><a class="dropdown-item" href="/contenido#front-end">Desarrollo Front End</a></li>
+              <li><a class="dropdown-item" href="/contenido#back-end">Desarrollo Back End</a></li>
+            </ul>
+          </div>
           </NavBtn>
             <NavBtn>
             <NavBtnLink to='/recursos'>Recursos</NavBtnLink>

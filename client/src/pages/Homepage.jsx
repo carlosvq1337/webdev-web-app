@@ -9,7 +9,7 @@ const Wrapper = styled.div.attrs({
 
 `
 const Button = styled.a.attrs({
-    className: 'btn btn-primary',
+    className: 'btn-primary',
 })`
 border-radius: 50px;
 background: #150050;

@@ -83,9 +83,21 @@ const Content = () => {
 
             <p>Para una referencia completa de CSS que comprende su sintaxis, índice de palabras clave, información sobre selectores y conceptos importantes, puede referirse a la <a href="https://developer.mozilla.org/es/docs/Web/CSS/Reference" target="_blank" rel="noreferrer" class = "external-link">Referencia CSS</a> en MDN Web Docs de Mozilla. Siéntase en completa libertad de editar el código CSS en el <span class="it">codepen</span> para experimentar observando los resultados. </p>
 
+            <h4>CSS Grid</h4>
+
+            <p>Entre las funcionalidades más esenciales de CSS existe la llamada CSS Grid. Esta es especialmente útil, ya que permite orgnizar los elementos de la aplicacón de forma muy sencilla y ordenada. El siguiente <span class="it">codepen</span>, cortesía de Mozilla, muestra lo sencilla que es la implementación de un CSS Grid básico.</p>
+
+            <iframe height="500" scrolling="no" title="CSS Grid Layout - Basic Grid" src="https://codepen.io/mozilladevelopers/embed/veXQmp?default-tab=js%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mozilladevelopers/pen/veXQmp">
+            CSS Grid Layout - Basic Grid</a> by Mozilla Developers (<a href="https://codepen.io/mozilladevelopers">@mozilladevelopers</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+
+            <p>La funcionalidad CSS Grid se detalla a fondo en  <a href="https://mozilladevelopers.github.io/playground/css-grid" target="_blank" rel="noreferrer" class = "external-link">la introducción a CSS Grid</a> de Mozilla. </p>
+
             <h3 id = "Bootstrap">Bootstrap</h3>
 
-            <p>Bootstrap es un conjunto de herramientas de código abierto que facilitan el proceso de diseño . De manera muy resumida, bootstrap permite acceder a una librería enorme de elementos con estilos y funcionalidades predefinidas de forma muy sencilla por medio de las clases HTML. En el siguiente <span class="it">codepen</span> se puede apreciar un ejemplo realizado por Chris Coyier, donde por medio de la red de distribución de contenido <a href="https://www.bootstrapcdn.com/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap CDN</a> se realiza la inclusión de las clases Bootstrap que luego son utilizadas en el código HTML. Cómo se puede observar en el mismo <span class="it">codepen</span>, el código CSS es mínimo, sin embargo los elementos poseen estilos complejos y muy atractivos, ya que se trata de los estilos Bootstrap asociados a las clases referenciadas desde el HTML.</p>
+            <p><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap</a> es un conjunto de herramientas de código abierto que facilitan el proceso de diseño . De manera muy resumida, bootstrap permite acceder a una librería enorme de elementos con estilos y funcionalidades predefinidas de forma muy sencilla por medio de las clases HTML. En el siguiente <span class="it">codepen</span> se puede apreciar un ejemplo realizado por Chris Coyier, donde por medio de la red de distribución de contenido <a href="https://www.bootstrapcdn.com/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap CDN</a> se realiza la inclusión de las clases Bootstrap que luego son utilizadas en el código HTML. Cómo se puede observar en el mismo <span class="it">codepen</span>, el código CSS es mínimo, sin embargo los elementos poseen estilos complejos y muy atractivos, ya que se trata de los estilos Bootstrap asociados a las clases referenciadas desde el HTML.</p>
 
             <iframe height="400" scrolling="no" title="Example of Bootstrap on CodePen" src="https://codepen.io/chriscoyier/embed/hBzat?default-tab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
             See the Pen <a href="https://codepen.io/chriscoyier/pen/hBzat">
@@ -94,6 +106,8 @@ const Content = () => {
             </iframe>
 
             <p>Para una guía detallada de cómo añadir Bootstrap a cualquier aplicación web, puede referirse a la <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel="noreferrer" class = "external-link">Introducción a Bootstrap</a>.</p>
+
+            <p>Bootstrap además provee una funcionalidad análoga a CSS Grid, solo que con mucha más flexibilidad, ya que esta, denomidada Bootstrap Grid, puede ser configurada para responder a cambios en el tamaño de la ventana u otras caractarísticas del medio. Bootstrap Grid se encuentra documentada a fondo en <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap Grid System</a>.</p>
 
         <h3 id = "js">JavaScript</h3>
 

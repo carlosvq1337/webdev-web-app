@@ -1,0 +1,33 @@
+.dropdown .btn {
+    background-color: #150050;
+    border-radius: 15px;
+}
+
+.dropdown ul {
+    background-color: #150050;
+    list-style-type: none;
+    border-radius: 15px;
+}
+
+
+.dropdown > button:hover {
+    background-color: #3F0071;
+    color: #FFF;
+}
+
+.dropdown-menu li a{
+    background-color: #150050;
+    color: #FFF;
+}
+
+.dropdown-menu li {
+    margin-top: -20px;
+}
+
+
+
+.dropdown-menu > li > a:hover {
+    background-color:#3F0071;
+    color: #FFF;
+}
+
