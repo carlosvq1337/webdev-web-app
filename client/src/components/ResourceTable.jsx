@@ -4,7 +4,7 @@ import './ResourceTable.css'
 function ResourceTable() {
     return(
 <>
-<h3 class = "content-header">Recursos Útiles</h3>
+<h4 class = "content-header">Recursos Útiles</h4>
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h4 class="accordion-header" id="headingOne">
