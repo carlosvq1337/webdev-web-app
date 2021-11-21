@@ -11,11 +11,8 @@ export const Content = styled.div`
 `;
   
 export const Button = styled.div`
-   position: relative;
-   position: sticky;
-   position: -webkit-sticky; /* For Safari */
-   top: 580px; /* How far down the page you want your ToC to live */
-   margin-left: 40%;
+   position: fixed;
+   bottom: 80px; /* How far down the page you want your ToC to live */
    height: 20px;
    font-size: 3rem;
    z-index: 1;

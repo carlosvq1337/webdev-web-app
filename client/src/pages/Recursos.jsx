@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {  } from "../components";
 import Rec from "../components/Rec";
 import { TableOfContents, ResourceTable } from "../components";
+import { ScrollButton } from "../components";
 
 class Recursos extends Component {
 
@@ -12,6 +13,7 @@ class Recursos extends Component {
                 <div class = "row justify-content-around">
                 <div class = "col-2 d-none d-xl-block ml-4">
                         <TableOfContents/>
+                        <ScrollButton/>
                 </div>
                 <div class = "col-10 col-xl-7 ">
                     <Rec/>

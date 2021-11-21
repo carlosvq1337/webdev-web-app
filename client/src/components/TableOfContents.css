@@ -14,7 +14,6 @@
   .content-header {
     position: sticky;
     position: -webkit-sticky; /* For Safari */
-    overflow: auto;
     top: 85px; /* How far down the page you want your ToC to live */
   }
 
