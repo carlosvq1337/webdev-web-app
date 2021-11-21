@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {  } from "../components";
 import Rec from "../components/Rec";
-import { TableOfContents } from "../components";
+import { TableOfContents, ResourceTable } from "../components";
 
 class Recursos extends Component {
 
@@ -11,11 +11,16 @@ class Recursos extends Component {
             <div class = "container-fluid">
                 <div class = "row justify-content-around">
                 <div class = "col-2 d-none d-xl-block ml-4">
+                        <h4>Tabla de Contenidos</h4>
                         <TableOfContents/>
-                    </div>
-                    <div class = "col-12 col-xl-9 ">
-                        <Rec/>
-                    </div>
+                </div>
+                <div class = "col-10 col-xl-7 ">
+                    <Rec/>
+                </div>
+                <div class = "col-2 d-none d-xl-block ml-4">
+                    <h4>Recursos Útiles</h4>
+                    <ResourceTable/>
+                </div>
                     
                 </div>
             </div>

@@ -1,0 +1,18 @@
+.accordion .accordion-item {
+    background-color: #b3cead;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button{
+    background-color: #b3cead;
+    font-weight:bold;
+}
+
+.accordion {
+    position: sticky;
+    position: -webkit-sticky; /* For Safari */
+    top: 24px; /* How far down the page you want your ToC to live */
+    /* Give table of contents a scrollbar */
+    max-height: calc(100vh - 40px);
+    overflow: auto;
+    padding-top: 10px;
+}
