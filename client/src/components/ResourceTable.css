@@ -7,10 +7,17 @@
     font-weight:bold;
 }
 
+.content-header {
+    position: sticky;
+    position: -webkit-sticky; /* For Safari */
+    overflow: auto;
+    top: 85px; /* How far down the page you want your ToC to live */
+  }
+
 .accordion {
     position: sticky;
     position: -webkit-sticky; /* For Safari */
-    top: 24px; /* How far down the page you want your ToC to live */
+    top: 125px; /* How far down the page you want your ToC to live */
     /* Give table of contents a scrollbar */
     max-height: calc(100vh - 40px);
     overflow: auto;

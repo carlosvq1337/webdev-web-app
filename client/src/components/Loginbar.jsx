@@ -6,17 +6,22 @@ import './Loginbar.css'
 
 //STYLING
 const Nav = styled.nav`
-height: 80px;
+height: 60px;
 display: flex;
 justify-content: center;
 background: #88A863;
 padding: 0.5rem calc((100vw - 1000px)/2);
-z-idex: 10;
 margin-bottom: 80px;
 border-bottom-style: solid;
-border-width: 3px;
+border-width: 1px;
 broder-color: #150050;
-
+position: sticky;
+position: -webkit-sticky; /* For Safari */
+top: 0px; /* How far down the page you want your ToC to live */
+/* Give table of contents a scrollbar */
+max-height: calc(100vh - 40px);
+padding-top: 10px;
+z-index = 10;
 `
 
 const NavMenu = styled.div`
