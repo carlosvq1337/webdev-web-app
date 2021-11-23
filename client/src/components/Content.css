@@ -13,6 +13,24 @@
     width: 55%;
 }
 
+.content_image-wide {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.content_image-narrow {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
 .it {
     font-style: italic;
 }
