@@ -3,6 +3,7 @@ import './Content.css';
 import { KanyeRestApi } from '.';
 import webdev_diagram from '../webdev_diagram.svg';
 import sql_diagram from '../sql_diagram.svg';
+import sql_diagram2 from '../sql_diagram2.svg';
 import nosql_diagram from '../nosql_diagram.svg';
 import MERN_diagram from '../MERN_diagram.svg';
 import { CodeBlock } from '@atlaskit/code';
@@ -97,7 +98,7 @@ const Content = () => {
 
             <h3 id = "Bootstrap">Bootstrap</h3>
 
-            <p><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap</a> es un conjunto de herramientas de código abierto que facilitan el proceso de diseño . De manera muy resumida, bootstrap permite acceder a una librería enorme de elementos con estilos y funcionalidades predefinidas de forma muy sencilla por medio de las clases HTML. En el siguiente <span class="it">codepen</span> se puede apreciar un ejemplo realizado por Chris Coyier, donde por medio de la red de distribución de contenido <a href="https://www.bootstrapcdn.com/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap CDN</a> se realiza la inclusión de las clases Bootstrap que luego son utilizadas en el código HTML. Cómo se puede observar en el mismo <span class="it">codepen</span>, el código CSS es mínimo, sin embargo los elementos poseen estilos complejos y muy atractivos, ya que se trata de los estilos Bootstrap asociados a las clases referenciadas desde el HTML.</p>
+            <p><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap</a> es un conjunto de herramientas de código abierto que facilitan el proceso de diseño . De manera muy resumida, bootstrap permite acceder a una librería enorme de elementos con estilos y funcionalidades predefinidas de forma muy sencilla por medio de las clases HTML. En el siguiente <span class="it">codepen</span> se puede apreciar un ejemplo realizado por Chris Coyier, donde por medio de la red de distribución de contenido <a href="https://www.bootstrapcdn.com/" target="_blank" rel="noreferrer" class = "external-link">Bootstrap CDN</a> se realiza la inclusión de las clases Bootstrap que luego son utilizadas en el código HTML. Cómo se puede observar en el mismo <span class="it">codepen</span>, el código CSS es mínimo, sin embargo los elementos poseen estilos complejos y muy atractivos, ya que se trata de los estilos Bootstrap asociados a las clases referenciadas desde el HTML. Esto se puede apreciar en el siguiente ejemplo realizado por <a href="https://codepen.io/chriscoyier" target="_blank" rel="noreferrer" class = "external-link">Chris Coyier:</a></p>
 
             <iframe height="400" scrolling="no" title="Example of Bootstrap on CodePen" src="https://codepen.io/chriscoyier/embed/hBzat?default-tab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
             See the Pen <a href="https://codepen.io/chriscoyier/pen/hBzat">
@@ -125,7 +126,7 @@ const Content = () => {
 
             <p>Para más información sobre Event Listeners, y la lista de eventos que se pueden manejar con JavaScript, puede referirse a <a href="https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener" target="_blank" rel="noreferrer" class = "external-link">element.addEventListener()</a></p>
 
-            <p>Javascript permite además trabajar con variables para realizar las operaciones básicas como en la mayoría de los lenguajes de programación más conocidos. JavaScript también permite declarar funciones, esto se ejemplifica en el siguiente <span class="it">codepen</span> donde el usuario Giana implementó una calculadora que opera completamente con funciones JavaScript. </p>
+            <p>Javascript permite además trabajar con variables para realizar las operaciones básicas como en la mayoría de los lenguajes de programación más conocidos. JavaScript también permite declarar funciones, esto se ejemplifica en el siguiente <span class="it">codepen</span> donde el usuario <a href="https://codepen.io/giana" target="_blank" rel="noreferrer" class = "external-link">Giana</a> implementó una calculadora que opera completamente con funciones JavaScript. </p>
 
             <iframe height="850" scrolling="no" title="JavaScript calculator" src="https://codepen.io/giana/embed/GJMBEv?default-tab=js%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
             See the Pen <a href="https://codepen.io/giana/pen/GJMBEv">
@@ -188,19 +189,36 @@ const Content = () => {
             
             
             <h3 id = "SQL">Bases de datos SQL</h3>
-            <p>	Las bases de datos SQL existen desde la década de 1970, su enfoque principal es reducir la duplicación de datos, ya que en ese entonces el almacenamiento era muchísimo más costoso que el tiempo de desarrollo. Por esta razón los esquemas de estas bases de datos suelen ser complejos, rígidos y su escalamiento es complejo. Esto es debido principalmente a su estructura relacional, que requiere que exista una relación entre los objetos o entidades definidos en el esquema, de forma que se puedan identificar las instancias de las entidades almacenadas y relacionarlas entre sí.</p>
+            <p>	Las bases de datos SQL existen desde la década de 1970, su enfoque principal es reducir la duplicación de datos, ya que en ese entonces el almacenamiento era muchísimo más costoso que el tiempo de desarrollo. Por esta razón los esquemas de estas bases de datos suelen ser complejos, rígidos y su escalamiento es complicado. Esto es debido principalmente a su estructura relacional, que requiere que exista una relación entre los objetos o entidades definidos en el esquema, de forma que se puedan identificar las instancias de las entidades almacenadas y relacionarlas entre sí.</p>
 
             <img src={sql_diagram} alt="diagram" class = "content_image"/>
 
-            <p>En el esquema anterior se puede apreciar un ejemplo de un diagrama de relaciones entre las entidades de una base de datos SQL. Se puede apreciar que cada entidad posee un <span class = "at-rosado">atributo identificador</span> , y además algunas entidades poseen los <span class = "at-verde">atributos identificadores de otras</span>. De esta manera se puede establecer una relación entre los distintos objetos, denotada por las flechas presentes en la figura. Para información detallada sobre la implementación y el funcionamiento de las bases de datos SQL puede referirse a <a href="https://www.tutorialspoint.com/sql/sql-quick-guide.htm" target="_blank" rel="noreferrer" class = "external-link">SQL - Quick Guide</a> en Tutorialspoint.</p>
+            <p>En el esquema anterior se puede apreciar un ejemplo de un diagrama de relaciones entre las entidades de una base de datos SQL. Se puede apreciar que cada entidad posee un <span class = "at-rosado">atributo identificador</span> , y además algunas entidades poseen los <span class = "at-verde">atributos identificadores de otras</span>. De esta manera se puede establecer una relación entre los distintos objetos, denotada por las flechas presentes en la figura. Se tendrían entonces tres tablas distintas, relacionadas entre sí de la siguiente manera:
+
+            <img src={sql_diagram2} alt="diagram" class = "content_image-wide"/>
+            
+            
+            Para información detallada sobre la implementación y el funcionamiento de las bases de datos SQL puede referirse a <a href="https://www.tutorialspoint.com/sql/sql-quick-guide.htm" target="_blank" rel="noreferrer" class = "external-link">SQL - Quick Guide</a> en Tutorialspoint.</p>
 
             <h3 id = "NoSQL">Bases de datos NoSQL</h3>
 
-            <p>	En contraste a las bases de datos SQL, las bases de datos NoSQL tienen un enfoque en la su escalabilidad y flexibilidad. Consumen menos tiempo de desarrollo y son más amigables a los cambios, por lo que han adquirido mucha tracción. Además, estas bases de datos son no relacionales. Se puede pensar en una base de datos no relacional como una tabla dónde no necesariamente todas las entradas poseen los mismos atributos. Es por esta razón que la bases de datos NoSQL son tan flexibles, ya que permiten hacer el equivalente de agregar columnas a la tabla sí se desean introducir nuevos atributos, sin necesidad de realizar un esquema de relaciones entre entidades. Sí se desea agregar una nueva entrada a la base de datos con atributos no preexistentes o un formato distinto, esto se puede hacer sin problemas</p>
+            <p>	En contraste a las bases de datos SQL, las bases de datos NoSQL tienen un enfoque en la escalabilidad y flexibilidad. Consumen menos tiempo de desarrollo y son más amigables a los cambios, por lo que han adquirido mucha tracción. Además, estas bases de datos son no relacionales. En las bases de datos no relacionales los datos se almancenan de forma eficiente según el tipo de dato, por lo que existen diferentes tipos de bases de datos no relacionales, entre los más comunes se encuentran:
+            </p>
+            <ol class = "content-list">
+                <li><strong>Bases de datos orientadas a documentos</strong></li>
+            </ol>
+
+            <p>Estas almacenan la información en forma de <span class = "it">documentos</span>, donde estos poseen una estructura de datos compleja.</p>
+
+            <ol class = "content-list">
+                <li><strong>Bases de datos orientadas a valores</strong></li>
+            </ol>
+
+            <p>Estas relacionan pares de key-valor entre sí, se pueden visializar como un diccionario, por lo que son mucho más sencillas que las bases de datos que manejan documentos:</p>
 
             <img src={nosql_diagram} alt="diagram" class = "content_image"/>
 
-            <p>En la figura anterior se puede apreciar como se introdujo un nuevo atributo <span class = "at-verde">SLA_dias</span> a la tabla. Además se aprecia como no todas las entradas poseen toda la información, por ejemplo el nuevo campo. Esto es parte de la flexibilidad que ofrecen las bases de datos no relacionales, se pueden definir campos obligatorios y campos opcionales. Una de las plataformas para bases de datos no relacionales más populares es <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" class = "external-link">MongoDB</a>. Para profundizar en el tema de bases de datos no relacionales puede referirse a <a href="https://www.mongodb.com/databases/non-relational" target="_blank" rel="noreferrer" class = "external-link">What is a Non-Relational Database?</a>.</p>
+            <p>Lo más importante es que sea cual sea el tipo de base de datos no relacional que se implementa, como su nombre lo dice, no existen relaciones entre sus elementos, ya que todas sus entradas son almacenadas bajo el mismo esquema, al mismo tiempo que permiten gran flexibilidad, lo que facilita enormemente el proceso de desarrollo. Una de las plataformas para bases de datos no relacionales más populares es <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" class = "external-link">MongoDB</a>. Para profundizar en el tema de bases de datos no relacionales puede referirse a <a href="https://www.mongodb.com/databases/non-relational" target="_blank" rel="noreferrer" class = "external-link">What is a Non-Relational Database?</a>.</p>
 
         <h2 id = "MERN">MERN</h2>
         <p>Se conoce como MERN el conjunto de las tecnologías MongoDB, ExpressJS, ReactJS y NodeJS. Este conjunto de tecnologías facilita el desarrollo <span class="it">full stack</span> de una aplicación web, desde el <span class="it">front end</span> haciendo uso de ReactJS, HTML y CSS, hasta el <span class="it">back end</span>, con una base de datos impulsada por MongoDB y una funcionalidad a nivel de servidor manejada por Node y Express. La siguiente figura muestra la estructurade una aplicación web con tecnologías MERN, y las distintas áreas donde estas operan.</p>
@@ -214,11 +232,11 @@ const Content = () => {
 
             <p><a href="https://mongoosejs.com/" target="_blank" rel="noreferrer" class = "external-link">Mongoose</a> es una biblioteca para JavaScript que simplifica la tarea de generar la conexión a la base de datos por medio de sus funciones:</p>
             
-            <CodeBlock language="js" showLineNumbers={true} text={mongoose1} highlight="1,6"/>
+            <CodeBlock language="js" showLineNumbers={true} text={mongoose1}/>
             <br />
             <p>Además, posee funcionalidades para definir <a href="https://mongoosejs.com/docs/guide.html" target="_blank" rel="noreferrer" class = "external-link">schemas</a>. Un schema define la estructura que tendrán las entradas de la base de datos:</p>
 
-            <CodeBlock language="js" showLineNumbers={true} text={mongoose2} highlight="2, 4-14"/>
+            <CodeBlock language="js" showLineNumbers={true} text={mongoose2}/>
             <br />
             <p>En adición a estas funcionalidades básicas, Mongoose permite mucha más profunidad, al permitir definir métodos para los schemas definidos, QueryHelpers, y otras funcioanlidades aún más complejas descritas en <a href="https://mongoosejs.com/docs/guide.html" target="_blank" rel="noreferrer" class = "external-link">la guía oficial de Mongoose</a>.</p>
     
@@ -236,12 +254,14 @@ const Content = () => {
             on <a href="https://codepen.io">CodePen</a>.
             </iframe>
                 
-            <p>El <span class="it">codepen</span> anterior muestra un elemento react muy básico y sencillo, pero dinámico, capaz de desplegar la hora y actualizarse cada segundo. En la <a href="https://es.reactjs.org/" target="_blank" rel="noreferrer" class = "external-link">página oficial de React</a> se pueden apreciar ejemplos descritos detalladamente de distintos elementos que incorporan diferentes funcionalidades, así como un <a href="https://es.reactjs.org/tutorial/tutorial.html" target="_blank" rel="noreferrer" class = "external-link">tutorial introductorio a React.</a></p>
+            <p>El <span class="it">codepen</span> anterior creado por <a href="https://codepen.io/gaearon" target="_blank" rel="noreferrer" class = "external-link">Dan Abramov</a>, muestra un elemento react muy básico y sencillo, pero dinámico, capaz de desplegar la hora y actualizarse cada segundo. En la <a href="https://es.reactjs.org/" target="_blank" rel="noreferrer" class = "external-link">página oficial de React</a> se pueden apreciar ejemplos descritos detalladamente de distintos elementos que incorporan diferentes funcionalidades, así como un <a href="https://es.reactjs.org/tutorial/tutorial.html" target="_blank" rel="noreferrer" class = "external-link">tutorial introductorio a React.</a></p>
             <h3 id = "Node">Node</h3>
             <p><a href="https://nodejs.org/es/about/" target="_blank" rel="noreferrer" class = "external-link">Node</a> es un entorno de ejecución para JavaScript que fue diseñado con el fin de crear aplicaciones <span class="it">network</span> escalables. Específicamente permite manejar conexiones entre clientes y servidores de forma muy eficiente y sencilla. Por esta razón es especialmente útil en el ámbito del desarrollo web, ya que permite implementar aplicaciones a nivel de servidor que manejan las solicitudes y retornan las respuestas adecuadas a los clientes, así como también permite un manejo de los accesos a las bases de datos.</p>
             <p>Node permite además implementar un ambiente de desarrollo de forma sencilla, que incluye una instalación de NodeJS, ExpressJS y NPM. Este último es el instalador de paquetes por defecto para NodeJS y puede ser utilizado para instalar todo tipo de paquetes JavaScript, incluyendo el ya mencionado; ReactJS. El proceso de instalación de Node y creación del ambiente de desarrollo se detalla en <a href="https://developer.mozilla.org/es/docs/Learn/Server-side/Express_Nodejs/development_environment" target="_blank" rel="noreferrer" class = "external-link">Setting up a Node development environment</a> por MDN Web Docs.</p>
             </div>
     );
 };
+
+
 
 export default Content;
