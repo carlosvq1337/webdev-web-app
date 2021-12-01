@@ -122,7 +122,7 @@ const useHeadingsData = () => {
   
     return (
       <>
-      <h4 class = "content-header">Tabla de Contenidos</h4>
+      <h4 class = "content-header">Contenidos</h4>
       <nav aria-label="Table of contents" class ="tocNav">
         <Headings headings={nestedHeadings} activeId={activeId} />
       </nav>

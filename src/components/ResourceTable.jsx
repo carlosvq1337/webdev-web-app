@@ -78,7 +78,7 @@ function ResourceTable() {
 <ol>
 
 <li><strong><a href="https://www.adobe.com/la/products/xd.html" target="_blank" rel="noreferrer" class = "external-link">Adobe XD - Pagada</a></strong></li>
-<li><strong><a href="https://www.figma.com/" target="_blank" rel="noreferrer" class = "external-link">Figma - Gratis</a></strong></li>
+<li><strong><a href="https://www.canva.com/es_419/" target="_blank" rel="noreferrer" class = "external-link">Canva - Gratis</a></strong></li>
 </ol>
 
       </div>

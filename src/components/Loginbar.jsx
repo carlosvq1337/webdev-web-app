@@ -107,9 +107,6 @@ const Loginbar = () => {
             <NavBtn>
             <NavBtnLink to='/recursos'>Recursos</NavBtnLink>
           </NavBtn>
-            <NavBtn>
-            <NavBtnLink to='/acerca'>Acerca</NavBtnLink>
-          </NavBtn>
           </NavMenu>
         </Nav>
       </>        
