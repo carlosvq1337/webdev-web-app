@@ -46,8 +46,8 @@ app.get('/', function (req, res) {
 const Content = () => {
     return (
         <div class = "content-wrapper">
-        <h2 id = "webdev-intro">Breve introducción</h2>
-        <p>Las tecnologías de desarrollo web se dividen en dos categorías principales, que juntas conforman lo que se conoce como el desarrollo  <span class="it">full stack</span>. Esta división comprende las tecnologías dedicadas al desarrollo <span class="it">front end</span> y aquellas dedicadas el desarrollo <span class="it">back end</span>. El término <span class="it">front end</span> de forma resumida, hace alusión a la interfaz de usuario, mientras que el término <span class="it">back end</span> se refiere al servidor, base de datos y aplicación que maneja la comunicación entre estos, para implementar las funcionalidades y desplegar la información al usuario. 
+        <h2 id = "webdev-intro">¿Qué es el desarrollo web <span class = "it">full stack</span>?</h2>
+        <p>El desarrollo web hace referencia al proceso de creación de una aplicación web y su implementación para que sea accesible a través del internet. Las aplicaciones web varían desde páginas estáticas, hasta aplicaciones más complejas, como redes sociales, servicios de negocios, etc. Las tecnologías de desarrollo web se dividen en dos categorías principales, que juntas conforman lo que se conoce como el desarrollo  <span class="it">full stack</span>. Esta división comprende las tecnologías dedicadas al desarrollo <span class="it">front end</span> y aquellas dedicadas el desarrollo <span class="it">back end</span>. El término <span class="it">front end</span> hace alusión a la interfaz de usuario, mientras que el término <span class="it">back end</span> se refiere al servidor, base de datos y aplicación que maneja la comunicación entre estos, para implementar las funcionalidades y desplegar la información al usuario. 
         <br />
         <img src={webdev_diagram} alt="diagram" class = "content_image"/>
         <br />
